@@ -1,0 +1,60 @@
+.header-top {
+  display: flex;
+  justify-content: center;
+}
+
+.all {
+  width: 90%;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top {
+  background-color: #f8f8f8;
+  padding: 10px 0;
+}
+
+.header-social-container {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.header-alert-news {
+  text-align: center;
+}
+
+.header-alert-news p {
+  font-size: 14px;
+  color: gray;
+}
+
+.header-top-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.header-top-actions select {
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+}
+
+
+@media (max-width: 768px) {
+  .all {
+    display: block;
+  }
+
+  .header-top {
+    display: none;
+  }
+}
