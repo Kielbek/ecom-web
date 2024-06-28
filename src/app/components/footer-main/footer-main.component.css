@@ -1,0 +1,62 @@
+.footer-nav {
+  background-color: #f8f9fa;
+  color: gray;
+  padding: 50px 40px;
+  border-top: gainsboro 1px solid;
+}
+  .all {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-nav-list {
+  list-style: none;
+  min-width: 150px;
+}
+
+.nav-title {
+  font-size: 14px;
+  color: black;
+}
+.footer-nav-link {
+  font-size: 12px;
+  color: gray;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-nav-link:hover {
+  color: midnightblue;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.icon-box {
+  margin-right: 9px;
+}
+
+address {
+  font-style: normal;
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+.footer-bottom {
+  display: flex;
+  max-width: 1200px;
+}
+
+.app-store {
+  max-width: 60px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.app-store img {
+  width: 100%;
+}
