@@ -1,0 +1,817 @@
+<div class="category-overview">
+  <div class="all">
+    <ul class="categories" (mouseenter)="changeCategory(Category.Electronics)">
+      <li class="category">
+        <div class="category-name">
+          <a>Elektronika</a>
+        </div>
+      </li>
+
+      <li class="category" (mouseenter)="changeCategory(Category.Fashion)">
+        <div class="category-name">
+          <a>Moda</a>
+        </div>
+      </li>
+
+      <li class="category" (mouseenter)="changeCategory(Category.HomeAndGarden)">
+        <div class="category-name">
+          <a>Dom i ogród</a>
+        </div>
+      </li>
+
+      <li class="category" (mouseenter)="changeCategory(Category.Automotive)">
+        <div class="category-name">
+          <a class>Motoryzacja</a>
+        </div>
+      </li>
+
+      <li class="category" (mouseenter)="changeCategory(Category.SportsAndRecreation)">
+        <div class="category-name">
+          <a>Sport i rekreacja</a>
+        </div>
+      </li>
+
+      <li class="category" (mouseenter)="changeCategory(Category.HealthAndBeauty)">
+        <div class="category-name">
+          <a>Zdrowie i uroda</a>
+        </div>
+      </li>
+
+      <li class="category" (mouseenter)="changeCategory(Category.ToysAndGames)">
+        <div class="category-name">
+          <a>Zabawki i gry</a>
+        </div>
+      </li>
+
+      <li class="category" (mouseenter)="changeCategory(Category.CollectiblesAndArt)">
+        <div class="category-name">
+          <a>Kolekcja i sztuka</a>
+        </div>
+      </li>
+
+      <li class="category" (mouseenter)="changeCategory(Category.IndustryAndBusiness)">
+        <div class="category-name">
+          <a>Przepysł i biznes</a>
+        </div>
+      </li>
+
+      <li class="category" (mouseenter)="changeCategory(Category.MusicInstrumentsAndDJ)">
+        <div class="category-name">
+          <a>Instrumenty muzyczne i sprzęt DJ-ski</a>
+        </div>
+      </li>
+
+      <li class="category" (mouseenter)="changeCategory(Category.MoviesAndDVD)">
+        <div class="category-name">
+          <a>Filmy i DVD</a>
+        </div>
+      </li>
+
+      <li class="category" (mouseenter)="changeCategory(Category.BooksComicsMagazines)">
+        <div class="category-name">
+          <a>Książki, komiksy i czasopisma</a>
+        </div>
+      </li>
+
+      <li class="category" (mouseenter)="changeCategory(Category.TicketsAndEvents)">
+        <div class="category-name">
+          <a>Bilety i eventy</a>
+        </div>
+      </li>
+
+      <li class="category" (mouseenter)="changeCategory(Category.Others)">
+        <div class="category-name">
+          <a>Inne</a>
+        </div>
+      </li>
+    </ul>
+
+    <div class="category-container">
+      <div class="category-content" *ngIf="Category.Electronics == selectedCategory">
+        <div class="category-section">
+          <div class="category-title">Telefony komórkowe i akcesoria</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Smartfony</li>
+            <li class="subcategory-item">Akcesoria do smartfonów</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Komputery, tablety i sieci</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Laptopy i netbooki</li>
+            <li class="subcategory-item">Tablety i czytniki e-booków</li>
+            <li class="subcategory-item">Komponenty komputerowe</li>
+            <li class="subcategory-item">Sieci domowe i routery</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Telewizory, audio i surround sound</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Telewizory LED, LCD, OLED</li>
+            <li class="subcategory-item">Systemy audio i kina domowego</li>
+            <li class="subcategory-item">Słuchawki i akcesoria audio</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Aparaty fotograficzne i kamery</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Aparaty cyfrowe</li>
+            <li class="subcategory-item">Obiektywy i akcesoria fotograficzne</li>
+            <li class="subcategory-item">Kamery cyfrowe i kamery sportowe</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Gry wideo i konsole</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Konsole do gier</li>
+            <li class="subcategory-item">Gry na konsole</li>
+            <li class="subcategory-item">Akcesoria do gier</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="category-content" *ngIf="Category.Automotive == selectedCategory">
+        <div class="category-section">
+          <div class="category-title">Samochody i ciężarówki</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Samochody osobowe</li>
+            <li class="subcategory-item">Samochody dostawcze i ciężarowe</li>
+            <li class="subcategory-item">Części zamienne i akcesoria samochodowe</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Motocykle</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Motocykle sportowe</li>
+            <li class="subcategory-item">Cruiser-y i chopper-y</li>
+            <li class="subcategory-item">Części i akcesoria motocyklowe</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Części i akcesoria samochodowe</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Części silnikowe</li>
+            <li class="subcategory-item">Opony i felgi</li>
+            <li class="subcategory-item">Wyposażenie wnętrza i zewnętrzne</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Narzędzia i wyposażenie warsztatowe</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Narzędzia ręczne</li>
+            <li class="subcategory-item">Elektronarzędzia</li>
+            <li class="subcategory-item">Wyposażenie do diagnostyki i naprawy</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="category-content" *ngIf="Category.Fashion == selectedCategory">
+        <div class="category-section">
+          <div class="category-title">Odzież damska</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Bluzki i koszule</li>
+            <li class="subcategory-item">Spodnie i jeansy</li>
+            <li class="subcategory-item">Sukienki i garnitury</li>
+            <li class="subcategory-item">Spódnice i spodnie damskie</li>
+            <li class="subcategory-item">Bluzy i swetry</li>
+            <li class="subcategory-item">Kombinezony damskie</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Obuwie damskie</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Buty sportowe</li>
+            <li class="subcategory-item">Buty eleganckie</li>
+            <li class="subcategory-item">Klapki i sandały</li>
+            <li class="subcategory-item">Botki damskie</li>
+            <li class="subcategory-item">Półbuty i baleriny</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Akcesoria damskie</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Torby na ramię</li>
+            <li class="subcategory-item">Portfele i portmonetki</li>
+            <li class="subcategory-item">Paski i akcesoria skórzane</li>
+            <li class="subcategory-item">Biżuteria damska</li>
+            <li class="subcategory-item">Szale i chusty</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Odzież męska</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Koszule i marynarki</li>
+            <li class="subcategory-item">Spodnie i jeansy</li>
+            <li class="subcategory-item">Garnitury męskie</li>
+            <li class="subcategory-item">Swetry i kardigany</li>
+            <li class="subcategory-item">T-shirty i polo</li>
+            <li class="subcategory-item">Kurtki i płaszcze</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Obuwie męskie</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Buty sportowe</li>
+            <li class="subcategory-item">Buty eleganckie</li>
+            <li class="subcategory-item">Mokasyny i oksfordy</li>
+            <li class="subcategory-item">Buty zimowe i trekkingowe</li>
+            <li class="subcategory-item">Sandały i klapki męskie</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Akcesoria męskie</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Paski skórzane</li>
+            <li class="subcategory-item">Portfele i etui</li>
+            <li class="subcategory-item">Krawaty i muszki</li>
+            <li class="subcategory-item">Zegarki męskie</li>
+            <li class="subcategory-item">Okulary przeciwsłoneczne</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Odzież dziecięca</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Bluzy i spodnie</li>
+            <li class="subcategory-item">Sukienki i spódniczki</li>
+            <li class="subcategory-item">Garnitury i kombinezony</li>
+            <li class="subcategory-item">Pajace i body</li>
+            <li class="subcategory-item">Sweterki i bluzy dziecięce</li>
+            <li class="subcategory-item">Kurtki i płaszcze dziecięce</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Obuwie dziecięce</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Buty sportowe</li>
+            <li class="subcategory-item">Buty do szkoły</li>
+            <li class="subcategory-item">Kapcie i balerinki dziecięce</li>
+            <li class="subcategory-item">Sandały i klapki dziecięce</li>
+            <li class="subcategory-item">Botki i trzewiki dziecięce</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Akcesoria dziecięce</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Czapki i czapki zimowe</li>
+            <li class="subcategory-item">Rękawiczki i szaliki</li>
+            <li class="subcategory-item">Okulary przeciwsłoneczne</li>
+            <li class="subcategory-item">Skarpety i rajstopy dziecięce</li>
+            <li class="subcategory-item">Zabawki na głowę</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Odzież sportowa</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Koszulki sportowe</li>
+            <li class="subcategory-item">Spodenki i legginsy sportowe</li>
+            <li class="subcategory-item">Bluzy i dresy sportowe</li>
+            <li class="subcategory-item">Kurtki i kamizelki sportowe</li>
+            <li class="subcategory-item">Akcesoria do sportów zimowych</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Obuwie sportowe</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Buty do biegania</li>
+            <li class="subcategory-item">Buty treningowe</li>
+            <li class="subcategory-item">Buty do piłki nożnej</li>
+            <li class="subcategory-item">Buty do koszykówki</li>
+            <li class="subcategory-item">Buty do tenisa</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Akcesoria sportowe</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Plecaki i torby sportowe</li>
+            <li class="subcategory-item">Czapki i ochraniacze sportowe</li>
+            <li class="subcategory-item">Rękawice i ochraniacze na dłonie</li>
+            <li class="subcategory-item">Okulary i nakrycia głowy sportowe</li>
+            <li class="subcategory-item">Sprzęt do ćwiczeń</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="category-content" *ngIf="Category.HomeAndGarden == selectedCategory">
+        <div class="category-section">
+          <div class="category-title">Dom i ogród</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Meble</li>
+            <li class="subcategory-item">Narzędzia i sprzęt ogrodniczy</li>
+            <li class="subcategory-item">Artykuły do sprzątania</li>
+            <li class="subcategory-item">Wyposażenie kuchenne</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Meble</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Meble do salonu</li>
+            <li class="subcategory-item">Meble do sypialni</li>
+            <li class="subcategory-item">Meble ogrodowe</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Narzędzia i sprzęt ogrodniczy</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Kosiarki</li>
+            <li class="subcategory-item">Narzędzia do pielęgnacji roślin</li>
+            <li class="subcategory-item">Nawadnianie ogrodu</li>
+            <li class="subcategory-item">Meble ogrodowe i grillowanie</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Artykuły do sprzątania</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Odkurzacze</li>
+            <li class="subcategory-item">Mopy i środki czystości</li>
+            <li class="subcategory-item">Akcesoria do prania</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Wyposażenie kuchenne</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Garnki i patelnie</li>
+            <li class="subcategory-item">Zestawy noży</li>
+            <li class="subcategory-item">Małe AGD (np. czajniki, tostery)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="category-content" *ngIf="Category.SportsAndRecreation == selectedCategory">
+        <div class="category-section">
+          <div class="category-title">Sport i rekreacja</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Sprzęt fitness i treningowy</li>
+            <li class="subcategory-item">Rowery i akcesoria</li>
+            <li class="subcategory-item">Sprzęt do sportów wodnych</li>
+            <li class="subcategory-item">Akcesoria do kempingu i turystyki</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Sprzęt fitness i treningowy</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Bieżnie</li>
+            <li class="subcategory-item">Hantle i obciążenia</li>
+            <li class="subcategory-item">Rowery treningowe</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Rowery i akcesoria</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Rowery górskie</li>
+            <li class="subcategory-item">Rowery szosowe</li>
+            <li class="subcategory-item">Rowery elektryczne</li>
+            <li class="subcategory-item">Części i akcesoria rowerowe</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Sprzęt do sportów wodnych</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Deski surfingowe</li>
+            <li class="subcategory-item">Skutery wodne</li>
+            <li class="subcategory-item">Węże i akcesoria do nurkowania</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Akcesoria do kempingu i turystyki</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Namioty</li>
+            <li class="subcategory-item">Śpiwory i maty turystyczne</li>
+            <li class="subcategory-item">Akcesoria kempingowe</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="category-content" *ngIf="Category.HealthAndBeauty == selectedCategory">
+        <div class="category-section">
+          <div class="category-title">Zdrowie i uroda</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Kosmetyki</li>
+            <li class="subcategory-item">Perfumy</li>
+            <li class="subcategory-item">Produkty do pielęgnacji skóry i włosów</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Kosmetyki</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Makijaż</li>
+            <li class="subcategory-item">Pielęgnacja twarzy i ciała</li>
+            <li class="subcategory-item">Produkty do depilacji</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Perfumy</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Perfumy dla kobiet</li>
+            <li class="subcategory-item">Perfumy dla mężczyzn</li>
+            <li class="subcategory-item">Zestawy upominkowe</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Produkty do pielęgnacji skóry i włosów</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Kosmetyki naturalne</li>
+            <li class="subcategory-item">Produkty do pielęgnacji skóry</li>
+            <li class="subcategory-item">Produkty do pielęgnacji włosów</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="category-content" *ngIf="Category.ToysAndGames == selectedCategory">
+        <div class="category-section">
+          <div class="category-title">Zabawki i gry</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Zabawki edukacyjne</li>
+            <li class="subcategory-item">Gry planszowe</li>
+            <li class="subcategory-item">Klocki LEGO</li>
+            <li class="subcategory-item">Lalki i pluszaki</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Zabawki edukacyjne</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Klocki LEGO</li>
+            <li class="subcategory-item">Zabawki edukacyjne interaktywne</li>
+            <li class="subcategory-item">Zabawki programowalne</li>
+            <li class="subcategory-item">Zabawki elektroniczne</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Gry planszowe</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Gry strategiczne</li>
+            <li class="subcategory-item">Gry dla dzieci</li>
+            <li class="subcategory-item">Gry logiczne</li>
+            <li class="subcategory-item">Gry karciane</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Klocki LEGO</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Klocki LEGO zestawy</li>
+            <li class="subcategory-item">Klocki LEGO pojedyncze elementy</li>
+            <li class="subcategory-item">Klocki LEGO minifigurki</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Lalki i pluszaki</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Lalki Barbie</li>
+            <li class="subcategory-item">Pluszaki Disney</li>
+            <li class="subcategory-item">Lalki Monster High</li>
+            <li class="subcategory-item">Akcesoria do lalek</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="category-content" *ngIf="Category.CollectiblesAndArt == selectedCategory">
+        <div class="category-section">
+          <div class="category-title">Monety i banknoty</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Monety kolekcjonerskie</li>
+            <li class="subcategory-item">Monety złote</li>
+            <li class="subcategory-item">Monety srebrne</li>
+            <li class="subcategory-item">Monety okolicznościowe</li>
+            <li class="subcategory-item">Banknoty kolekcjonerskie</li>
+            <li class="subcategory-item">Banknoty z całego świata</li>
+            <li class="subcategory-item">Banknoty historyczne</li>
+            <li class="subcategory-item">Banknoty okolicznościowe</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Znaczki</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Znaczki tematyczne</li>
+            <li class="subcategory-item">Znaczki florystyczne</li>
+            <li class="subcategory-item">Znaczki faunistyczne</li>
+            <li class="subcategory-item">Znaczki sportowe</li>
+            <li class="subcategory-item">Znaczki dla kolekcjonerów</li>
+            <li class="subcategory-item">Znaczki z serii limitowanej</li>
+            <li class="subcategory-item">Znaczki historyczne</li>
+            <li class="subcategory-item">Znaczki okolicznościowe</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Antyki</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Meble antyki</li>
+            <li class="subcategory-item">Antyki renesansowe</li>
+            <li class="subcategory-item">Antyki barokowe</li>
+            <li class="subcategory-item">Antyki art deco</li>
+            <li class="subcategory-item">Sztuka antyki</li>
+            <li class="subcategory-item">Antyczne obrazy</li>
+            <li class="subcategory-item">Antyczne rzeźby</li>
+            <li class="subcategory-item">Antyczne tkaniny</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Sztuka i rękodzieło</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Malarstwo</li>
+            <li class="subcategory-item">Rzeźba</li>
+            <li class="subcategory-item">Rękodzieło artystyczne</li>
+            <li class="subcategory-item">Ceramika artystyczna</li>
+            <li class="subcategory-item">Biżuteria ręcznie robiona</li>
+            <li class="subcategory-item">Tkaniny artystyczne</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="category-content" *ngIf="Category.IndustryAndBusiness == selectedCategory">
+        <div class="category-section">
+          <div class="category-title">Przemysł i biznes</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Wyposażenie biurowe</li>
+            <li class="subcategory-item">Narzędzia i maszyny przemysłowe</li>
+            <li class="subcategory-item">Materiały budowlane i wyposażenie</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Wyposażenie biurowe</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Biurka i krzesła biurowe</li>
+            <li class="subcategory-item">Urządzenia do laminowania</li>
+            <li class="subcategory-item">Drukarki i skanery</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Narzędzia i maszyny przemysłowe</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Maszyny CNC</li>
+            <li class="subcategory-item">Spawarki</li>
+            <li class="subcategory-item">Narzędzia pneumatyczne</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Materiały budowlane i wyposażenie</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Drabiny i rusztowania</li>
+            <li class="subcategory-item">Materiały izolacyjne</li>
+            <li class="subcategory-item">Farby i powłoki ochronne</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="category-content" *ngIf="Category.MusicInstrumentsAndDJ == selectedCategory">
+        <div class="category-section">
+          <div class="category-title">Instrumenty muzyczne i sprzęt DJ-ski</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Gitary i basy</li>
+            <li class="subcategory-item">Klawisze i pianina</li>
+            <li class="subcategory-item">Sprzęt nagłaśniający</li>
+            <li class="subcategory-item">Akcesoria muzyczne</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Gitary i basy</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Gitary akustyczne</li>
+            <li class="subcategory-item">Gitary klasyczne</li>
+            <li class="subcategory-item">Gitary folkowe</li>
+            <li class="subcategory-item">Gitary elektroakustyczne</li>
+            <li class="subcategory-item">Gitary elektryczne</li>
+            <li class="subcategory-item">Bas gitara</li>
+            <li class="subcategory-item">Bas gitary elektryczne</li>
+            <li class="subcategory-item">Bas gitary akustyczne</li>
+            <li class="subcategory-item">Bas gitary basowe</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Klawisze i pianina</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Fortepiany cyfrowe</li>
+            <li class="subcategory-item">Keyboardy</li>
+            <li class="subcategory-item">Syntezatory</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Sprzęt nagłaśniający</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Wzmacniacze audio</li>
+            <li class="subcategory-item">Miksery i konsole DJ</li>
+            <li class="subcategory-item">Głośniki i monitory studyjne</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Akcesoria muzyczne</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Etui na instrumenty</li>
+            <li class="subcategory-item">Stojaki i podstawy</li>
+            <li class="subcategory-item">Struny i części zamienne</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="category-content" *ngIf="Category.MoviesAndDVD == selectedCategory">
+        <div class="category-section">
+          <div class="category-title">Filmy i DVD</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Filmy DVD i Blu-ray</li>
+            <li class="subcategory-item">Filmy kolekcjonerskie</li>
+            <li class="subcategory-item">Akcesoria do filmów</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Filmy DVD i Blu-ray</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Filmy akcji</li>
+            <li class="subcategory-item">Filmy komediowe</li>
+            <li class="subcategory-item">Seriale TV</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Filmy kolekcjonerskie</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Limitowane wydania</li>
+            <li class="subcategory-item">Kolekcje filmowe</li>
+            <li class="subcategory-item">Kolekcje filmów animowanych</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Akcesoria do filmów</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Płyty DVD i Blu-ray</li>
+            <li class="subcategory-item">Skrzynki i pudełka na filmy</li>
+            <li class="subcategory-item">Kuferki na filmy i seriale</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="category-content" *ngIf="Category.BooksComicsMagazines == selectedCategory">
+      <div class="category-section">
+        <div class="category-title">Książki, komiksy i czasopisma</div>
+        <ul class="subcategory-list">
+          <li class="subcategory-item">Książki</li>
+          <li class="subcategory-item">Komiksy</li>
+          <li class="subcategory-item">Czasopisma</li>
+        </ul>
+      </div>
+
+      <div class="category-section">
+        <div class="category-title">Książki</div>
+        <ul class="subcategory-list">
+          <li class="subcategory-item">Literatura piękna</li>
+          <li class="subcategory-item">Poradniki</li>
+          <li class="subcategory-item">Książki dla dzieci i młodzieży</li>
+        </ul>
+      </div>
+
+      <div class="category-section">
+        <div class="category-title">Komiksy</div>
+        <ul class="subcategory-list">
+          <li class="subcategory-item">Komiksy Marvela</li>
+          <li class="subcategory-item">Komiksy DC</li>
+          <li class="subcategory-item">Mangi</li>
+        </ul>
+      </div>
+
+      <div class="category-section">
+        <div class="category-title">Czasopisma</div>
+        <ul class="subcategory-list">
+          <li class="subcategory-item">Czasopisma modowe</li>
+          <li class="subcategory-item">Czasopisma naukowe</li>
+          <li class="subcategory-item">Czasopisma motoryzacyjne</li>
+        </ul>
+      </div>
+    </div>
+
+      <div class="category-content" *ngIf="Category.TicketsAndEvents == selectedCategory">
+        <div class="category-section">
+          <div class="category-title">Bilety i eventy</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Bilety na koncerty</li>
+            <li class="subcategory-item">Bilety sportowe</li>
+            <li class="subcategory-item">Bilety do teatru</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Bilety na koncerty</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Bilety na koncerty rockowe</li>
+            <li class="subcategory-item">Bilety na festiwale muzyczne</li>
+            <li class="subcategory-item">Bilety na koncerty pop</li>
+            <li class="subcategory-item">Bilety na koncerty jazzowe</li>
+            <li class="subcategory-item">Bilety na koncerty folkowe</li>
+            <li class="subcategory-item">Bilety na koncerty elektroniczne</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Bilety sportowe</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Bilety na mecze piłki nożnej</li>
+            <li class="subcategory-item">Bilety na mecze koszykówki</li>
+            <li class="subcategory-item">Bilety na mecze hokeja</li>
+            <li class="subcategory-item">Bilety na zawody lekkoatletyczne</li>
+            <li class="subcategory-item">Bilety na wyścigi Formuły 1</li>
+            <li class="subcategory-item">Bilety na turnieje tenisowe</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Bilety do teatru</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Bilety na spektakle dramatyczne</li>
+            <li class="subcategory-item">Bilety na musical</li>
+            <li class="subcategory-item">Bilety na operę</li>
+            <li class="subcategory-item">Bilety na balet</li>
+            <li class="subcategory-item">Bilety na komedie teatralne</li>
+            <li class="subcategory-item">Bilety na koncerty kabaretowe</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="category-content" *ngIf="Category.Others == selectedCategory">
+        <div class="category-section">
+          <div class="category-title">Inne</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Usługi</li>
+            <li class="subcategory-item">Kupony i vouchery</li>
+            <li class="subcategory-item">Przedmioty kolekcjonerskie</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Usługi</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Usługi informatyczne</li>
+            <li class="subcategory-item">Usługi budowlane</li>
+            <li class="subcategory-item">Usługi finansowe</li>
+            <li class="subcategory-item">Usługi prawne</li>
+            <li class="subcategory-item">Usługi księgowe</li>
+            <li class="subcategory-item">Usługi projektowe</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Kupony i vouchery</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Vouchery na zakupy</li>
+            <li class="subcategory-item">Kupony rabatowe</li>
+            <li class="subcategory-item">Karty podarunkowe</li>
+            <li class="subcategory-item">Kupony na restauracje</li>
+            <li class="subcategory-item">Vouchery na usługi SPA</li>
+            <li class="subcategory-item">Kupony na podróże</li>
+          </ul>
+        </div>
+
+        <div class="category-section">
+          <div class="category-title">Przedmioty kolekcjonerskie</div>
+          <ul class="subcategory-list">
+            <li class="subcategory-item">Kolekcje figurek</li>
+            <li class="subcategory-item">Kolekcje sportowe</li>
+            <li class="subcategory-item">Kolekcje historyczne</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
