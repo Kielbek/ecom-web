@@ -13,7 +13,7 @@ import { FooterMainComponent } from './components/footer-main/footer-main.compon
     AppComponent,
     HeaderTopComponent,
     HeaderMainComponent,
-    DesktopNavigationMenuComponent
+    DesktopNavigationMenuComponent,
     HeaderMainComponent,
     FooterMainComponent
   ],
