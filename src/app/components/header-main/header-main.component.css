@@ -11,6 +11,30 @@
   align-items: center;
 }
 
+.product-category {
+}
+
+.product-category div {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.product-category b {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.product-category i {
+  padding: 5px;
+}
+
+.category-overview {
+  top: 130px;
+  position: absolute;
+}
+
 .header-main {
   padding: 15px 0;
 }
@@ -82,7 +106,8 @@
   }
 
   .header-user-actions,
-  .header-search-container select {
+  .header-search-container select,
+  .product-category {
     display: none;
   }
 
