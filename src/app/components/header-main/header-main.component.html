@@ -3,8 +3,17 @@
   <div class="all">
 
     <a href="#" class="header-logo">
-      <img src="assets/logo.png" alt="Anon's logo" width="120" height="36">
+      <img src="assets/logo.png" alt="MatiStore's logo" width="120" height="36">
     </a>
+
+    <div class="product-category">
+      <div (click)="showProctorCategory()">
+        <b>Wszytskie<br>kategorie</b>
+        <i class="bi bi-chevron-down" *ngIf="!showCategory"></i>
+        <i class="bi bi-chevron-up" *ngIf="showCategory"></i>
+      </div>
+      <app-product-quick-categories class="category-overview" *ngIf="showCategory"></app-product-quick-categories>
+    </div>
 
     <div class="header-search-container">
 

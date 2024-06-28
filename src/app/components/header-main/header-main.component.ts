@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './header-main.component.css'
 })
 export class HeaderMainComponent {
-
+  showCategory = false;
+  showProctorCategory() {
+    this.showCategory = !this.showCategory;
+  }
 }
