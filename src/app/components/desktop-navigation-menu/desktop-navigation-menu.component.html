@@ -1,0 +1,20 @@
+<nav class="desktop-navigation-menu">
+  <div class="all">
+    <ul class="desktop-menu-category-list">
+      <ng-container *ngFor="let category of displayedCategories">
+        <li class="menu-category" #category>
+          <a href="#" class="menu-title">{{ category.name }}</a>
+          <div class="dropdown-panel">
+            {{ category.content }}
+          </div>
+        </li>
+      </ng-container>
+      <select class="option-category" *ngIf="displayedOption.length > 0">
+        <option>Wybierz Kategorię</option>
+        <option *ngFor="let category of displayedOption">
+          {{ category.name }}
+        </option>
+      </select>
+    </ul>
+  </div>
+</nav>
