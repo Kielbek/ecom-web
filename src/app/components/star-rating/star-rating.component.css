@@ -1,0 +1,11 @@
+.star-rating {
+  display: flex;
+  align-items: center;
+}
+.bi-star-fill,
+.bi-star-half,
+.bi-star {
+  font-size: 13px;
+  color: #f39c12;
+  padding: 1px;
+}

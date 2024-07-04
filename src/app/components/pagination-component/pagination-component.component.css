@@ -1,0 +1,14 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+span {
+  font-size: 16px;
+}

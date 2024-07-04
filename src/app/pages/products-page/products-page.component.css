@@ -1,0 +1,43 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  width: 60rem;
+}
+
+.product-grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-list-container {
+  max-width: 750px;
+  align-items: center;
+}
+
+.product-grid {
+  width: calc(25% - 20px);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+@media (max-width: 1200px) {
+  .product-grid {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    width: calc(50% - 20px);
+    padding: 5px;
+  }
+
+  .product-list {
+    padding: 0;
+  }
+}

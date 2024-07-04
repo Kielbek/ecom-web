@@ -1,0 +1,52 @@
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.action-section {
+  display: flex;
+  align-items: center;
+}
+
+.open-filter {
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+
+.custom-select {
+  font-size: 14px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 8px 16px;
+  height: 40px;
+  max-width: 240px;
+}
+
+.btn {
+  cursor: pointer;
+  margin-right: 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+.btn:hover,
+.open-filter:hover {
+  border-radius: 3px;
+  border: 1px gray solid;
+}
+
+.btn i {
+  font-size: 1.6em;
+}
+
+
+@media (max-width: 768px) {
+  .open-filter {
+    display: block;
+  }
+}
