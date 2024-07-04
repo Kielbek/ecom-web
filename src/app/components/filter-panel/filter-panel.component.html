@@ -1,0 +1,41 @@
+<div class="filter-container">
+  <div class="filter-section" *ngFor="let filter of filters">
+    <div class="filter-header">
+      <label>{{ filter.label }}</label>
+      <div class="toggle-icon" (click)="toggleFilter(filter.type)">
+        <i class="bi" [ngClass]="{'bi-dash': !filter.show, 'bi-plus-lg': filter.show}"></i>
+      </div>
+    </div>
+    <ul *ngIf="filter.type === 'condition'" class="filter-list" [ngClass]="{'collapsed': !filter.show}">
+      <li *ngFor="let condition of conditions">
+        <input type="radio" name="condition" [value]="condition">{{ condition }}
+      </li>
+    </ul>
+    <ul *ngIf="filter.type === 'offer-type'" class="filter-list" [ngClass]="{'collapsed': !filter.show}">
+      <li *ngFor="let offerType of offerTypes">
+        <input type="checkbox" name="offer-type" [value]="offerType">{{ offerType }}
+      </li>
+    </ul>
+    <div *ngIf="filter.type === 'price'" class="filter-content prince-content" [ngClass]="{'collapsed': !filter.show}">
+      <div class="price-range">
+        <input type="text" placeholder="Od" [(ngModel)]="priceRange.from">
+        <p>-</p>
+        <input type="text" placeholder="Do" [(ngModel)]="priceRange.to">
+      </div>
+      <button type="button" (click)="submitPriceRange()">Zatwierdź cenę</button>
+    </div>
+    <ul *ngIf="filter.type === 'shipping'" class="filter-list" [ngClass]="{'collapsed': !filter.show}">
+      <li *ngFor="let shipping of shippingMethods">
+        <input type="checkbox" name="shipping" [value]="shipping">{{ shipping }}
+      </li>
+    </ul>
+    <div *ngIf="filter.type === 'location'" class="filter-content" [ngClass]="{'collapsed': !filter.show}">
+      <input type="text" placeholder="Miasto" [(ngModel)]="location.city">
+      <label>Województwo</label>
+      <select [(ngModel)]="location.state">
+        <option value="">Wybierz województwo</option>
+        <option *ngFor="let state of states" [value]="state">{{ state }}</option>
+      </select>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="filter-section">
+  <div class="action-section">
+    <button class="open-filter" (click)="showFiler()">
+      <span>Filtry</span>
+    </button>
+    <button class="btn" (click)="changeView()">
+      <i *ngIf="viewOption" class="bi bi-grid"></i>
+      <i *ngIf="!viewOption" class="bi bi-list-task"></i>
+    </button>
+
+    <select id="sortowanie" class="custom-select">
+      <option value="relevance">Najtrafniejsze</option>
+      <option value="price_asc">Cena rosnąco</option>
+      <option value="price_desc">Cena malejąco</option>
+      <option value="delivery_price_asc">Cena z dostawą rosnąco</option>
+      <option value="delivery_price_desc">Cena z dostawą malejąco</option>
+      <option value="popularity">Popularność</option>
+      <option value="time_remaining_asc">Czas do końca aukcji rosnąco</option>
+      <option value="time_remaining_desc">Czas do końca aukcji malejąco</option>
+      <option value="rating_desc">Ocena produktu malejąco</option>
+    </select>
+  </div>
+  <app-pagination-component (emitCurrentPage)="receiveCurrentPage($event)" [currentPage]="currentPage"
+                            [totalPages]="totalPages"></app-pagination-component>
+</div>

@@ -1,0 +1,41 @@
+<app-header-top></app-header-top>
+<app-header-main></app-header-main>
+
+<div class="page-container">
+  <app-filter-panel *ngIf="showFilterPanel"></app-filter-panel>
+  <div class="center">
+    <app-control-bar
+      (emitShowFilterPage)="receiveShowFilter($event)"
+      (emitOption)="receiveData($event)"
+      (emitCurrentPage)="receiveCurrentPage($event)"
+      [currentPage]="currentPage"
+      [totalPages]="totalPages">
+    </app-control-bar>
+
+    <div class="product-grid-container" *ngIf="viewOption">
+      <div class="product-grid" *ngFor="let product of products; let i = index"
+           [ngStyle]="{'background-color': hoveredProductIndex === i ? 'lightgrey' : 'transparent'}"
+           (mouseenter)="setHoveredProduct(i)"
+           (mouseleave)="clearHoveredProduct()">
+        <app-product-grid-view [item]="product.id"></app-product-grid-view>
+      </div>
+    </div>
+
+    <div class="product-list-container" *ngIf="!viewOption">
+      <div class="product-list" *ngFor="let product of products; let i = index"
+           [ngStyle]="{'background-color': hoveredProductIndex === i ? 'lightgrey' : 'transparent'}"
+           (mouseenter)="setHoveredProduct(i)"
+           (mouseleave)="clearHoveredProduct()">
+        <app-product-list-view [item]="product.id"></app-product-list-view>
+      </div>
+    </div>
+
+    <app-full-pagination-component
+      (emitCurrentPage)="receiveCurrentPage($event)"
+      [currentPage]="currentPage"
+      [totalPages]="totalPages">
+    </app-full-pagination-component>
+  </div>
+</div>
+
+<app-footer-main></app-footer-main>
