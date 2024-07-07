@@ -1,0 +1,15 @@
+<div class="popup-overlay" (click)="onClose()">
+  <div class="popup-content" (click)="$event.stopPropagation()">
+    <div class="popup-header">
+      <div class="header-content">
+        <h5 class="popup-title">Specyfikacja techniczna</h5>
+        <button type="button" class="close" (click)="onClose()">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+    </div>
+    <div class="popup-body">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

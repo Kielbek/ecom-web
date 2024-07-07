@@ -1,0 +1,19 @@
+<div class="technical-specification">
+  <h3>Specyfikacja techniczna</h3>
+  <table>
+    <tr *ngFor="let spec of specifications | slice:0:6">
+      <td><strong>{{ spec.label }}</strong></td>
+      <td>{{ spec.value }}</td>
+    </tr>
+  </table>
+  <button class="show-more-specification-button" (click)="openModal()">Pokaz więcej</button>
+</div>
+
+<app-technical-specification-pop-up *ngIf="showModal" (close)="closeModal()">
+  <table>
+    <tr *ngFor="let spec of specifications">
+      <td><strong>{{ spec.label }}</strong></td>
+      <td>{{ spec.value }}</td>
+    </tr>
+  </table>
+</app-technical-specification-pop-up>

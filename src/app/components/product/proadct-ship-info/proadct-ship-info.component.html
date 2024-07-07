@@ -1,0 +1,132 @@
+<div class="info-container">
+  <ul>
+    <li>
+      <i class="bi bi-clock"></i>
+      <span class="title">Dostawa:</span>
+      <span class="value">Już we wtorek</span>
+    </li>
+    <li>
+      <i class="bi bi-truck"></i>
+      <span class="title">Wysyłka:</span>
+      <span class="value">Już od 8 zł</span>
+      <button (click)="openModal()">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </li>
+    <li>
+      <i class="bi bi-arrow-return-left"></i>
+      <span class="title">Zwroty:</span>
+      <span class="value">Zwrot w ciągu 14 dni. Za wysyłkę zwrotną płaci kupujący</span>
+    </li>
+  </ul>
+</div>
+
+<app-technical-specification-pop-up *ngIf="showModal" (close)="closeModal()">
+  <table class="delivery-options">
+    <tbody>
+    <tr>
+      <td colspan="2"><strong>Kurierzy:</strong></td>
+    </tr>
+    <tr>
+      <td>Kurier</td>
+      <td>15 zł</td>
+    </tr>
+    <tr>
+      <td>Kurier pobraniowy</td>
+      <td>20 zł</td>
+    </tr>
+    <tr>
+      <td>Kurier za pobraniem</td>
+      <td>18 zł</td>
+    </tr>
+    <tr>
+      <td>Przesyłka kurierska</td>
+      <td>12 zł</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table class="delivery-options">
+    <tbody>
+    <tr>
+      <td colspan="2"><strong>Poczta:</strong></td>
+    </tr>
+    <tr>
+      <td>Poczta Polska</td>
+      <td>5 zł</td>
+    </tr>
+    <tr>
+      <td>List polecony</td>
+      <td>3,50 zł</td>
+    </tr>
+    <tr>
+      <td>List ekonomiczny</td>
+      <td>2,50 zł</td>
+    </tr>
+    <tr>
+      <td>Przesyłka polecona</td>
+      <td>8 zł</td>
+    </tr>
+    <tr>
+      <td>Przesyłka priorytetowa</td>
+      <td>7 zł</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table class="delivery-options">
+    <tbody>
+    <tr>
+      <td colspan="2"><strong>Paczkomaty i punkty odbioru:</strong></td>
+    </tr>
+    <tr>
+      <td>Paczkomaty InPost</td>
+      <td>9 zł</td>
+    </tr>
+    <tr>
+      <td>Paczka24 InPost</td>
+      <td>12 zł</td>
+    </tr>
+    <tr>
+      <td>Paczka48</td>
+      <td>10 zł</td>
+    </tr>
+    <tr>
+      <td>Paczka mini</td>
+      <td>8 zł</td>
+    </tr>
+    <tr>
+      <td>Odbiór w punkcie InPost</td>
+      <td>7 zł</td>
+    </tr>
+    <tr>
+      <td>Dostawa do paczkomatu</td>
+      <td>9 zł</td>
+    </tr>
+    <tr>
+      <td>Odbiór w punkcie</td>
+      <td>6 zł</td>
+    </tr>
+    <tr>
+      <td>Odbiór w sklepie stacjonarnym</td>
+      <td>0 zł</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table class="delivery-options">
+    <tbody>
+    <tr>
+      <td colspan="2"><strong>Inne:</strong></td>
+    </tr>
+    <tr>
+      <td>Odbiór osobisty</td>
+      <td>0 zł</td>
+    </tr>
+    <tr>
+      <td>EKONOM InPost</td>
+      <td>8 zł</td>
+    </tr>
+    </tbody>
+  </table>
+</app-technical-specification-pop-up>
