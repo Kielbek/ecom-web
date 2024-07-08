@@ -1,0 +1,81 @@
+.info-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info-container li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  display: flex;
+}
+
+.info-container li:last-child {
+  border-bottom: none;
+}
+
+.info-container li .title {
+  font-weight: bold;
+}
+
+.info-container li .value {
+  margin-left: 10px;
+  color: #333;
+}
+
+.info-container li button {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+}
+
+.bi-clock,
+.bi-truck,
+.bi-arrow-return-left {
+  font-size: 17px;
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.delivery-options {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.delivery-options td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.delivery-options strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.delivery-options .cost {
+  color: #555;
+  font-size: 0.9em;
+  display: block;
+}
+
+.delivery-options .cost:before {
+  content: "(";
+  color: #888;
+}
+
+.delivery-options .cost:after {
+  content: ")";
+  color: #888;
+}
+
+.delivery-options tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.delivery-options tbody tr:hover {
+  background-color: #e0e0e0;
+}

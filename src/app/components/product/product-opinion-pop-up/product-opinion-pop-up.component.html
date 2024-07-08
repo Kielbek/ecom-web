@@ -1,0 +1,29 @@
+<div class="popup-overlay" (click)="onClose()">
+  <div class="popup-content" (click)="$event.stopPropagation()">
+    <div class="popup-header">
+      <div class="header-content">
+        <h5 class="popup-title">Opinie o produkcie</h5>
+        <button type="button" class="close" (click)="onClose()">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      <div class="sort-options">
+        <select>
+          <option value="all">Wszystkie</option>
+          <option value="rating-1">1 gwiazdka</option>
+          <option value="rating-2">2 gwiazdki</option>
+          <option value="rating-3">3 gwiazdki</option>
+          <option value="rating-4">4 gwiazdki</option>
+          <option value="rating-5">5 gwiazdek</option>
+        </select>
+        <select>
+          <option value="newest">Od najnowszego</option>
+          <option value="oldest">Od najstarszego</option>
+        </select>
+      </div>
+    </div>
+    <div class="popup-body">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

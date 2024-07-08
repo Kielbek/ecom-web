@@ -1,0 +1,49 @@
+.seller-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.seller-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seller-photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.seller-data {
+  text-align: center;
+}
+
+.seller-name span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.seller-stats {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.seller-actions {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.seller-actions button {
+  padding: 4px 0;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: lightgrey;
+}
+
+.seller-actions button:hover {
+  background-color: #dddddd;
+}

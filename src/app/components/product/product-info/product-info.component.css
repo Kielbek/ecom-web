@@ -1,0 +1,53 @@
+.product-info {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.top {
+  display: flex;
+}
+
+.icon {
+  display: flex;
+  font-size: 21px;
+}
+
+.bi-share,
+.bi-heart {
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.product-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-title2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating-count {
+  margin-left: 10px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.purchase-info {
+  font-size: 0.9rem;
+  color: #888;
+}
