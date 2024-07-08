@@ -1,0 +1,51 @@
+<div class="logo-container">
+  <img src="assets/logo.png" alt="MatiStore Logo" class="logo">
+</div>
+
+<div class="login-container">
+  <h1>Witaj</h1>
+  <p>Zaloguj się do MatiStore lub <a href="/register" class="register-link">utwórz konto</a></p>
+
+  <form (ngSubmit)="login()">
+    <div class="form-group">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Hasło:</label>
+      <input type="password" id="password" name="password" [(ngModel)]="password" required>
+    </div>
+    <div class="form-group">
+      <a href="/forgot-password" class="forgot-password-link">Zapomniałeś hasła?</a>
+    </div>
+    <button type="submit">Zaloguj się</button>
+  </form>
+
+  <div class="divider">
+    <span class="or">lub</span>
+    <span class="line"></span>
+  </div>
+
+  <div class="social-login">
+    <button (click)="loginWithGoogle()" class="google-login">
+      <img src="assets/Logo-google-icon-PNG.png" alt="Google Icon">
+      Zaloguj przez Google
+    </button>
+    <button (click)="loginWithFacebook()" class="facebook-login">
+      <img src="assets/Popular-facebook-Logo-png%20(1).png" alt="Facebook Icon">
+      Zaloguj przez Facebook
+    </button>
+    <button (click)="loginWithApple()" class="apple-login">
+      <img src="assets/png-clipart-apple-logo-carplay-apple-heart-logo_preview_rev_1.png" alt="Apple Icon">
+      Zaloguj przez Apple
+    </button>
+  </div>
+  <div class="form-group">
+    <div class="form">
+      <input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="rememberMe">
+      <label for="rememberMe">Zapamiętaj dane logowania</label>
+    </div>
+    <p class="info">Twoje dane są bezpieczne i chronione. W celu zapewnienia bezpieczeństwa, nie udostępniaj swojego
+      hasła nikomu.</p>
+  </div>
+</div>

@@ -10,7 +10,7 @@ import { ProductQuickCategoriesComponent } from './components/product-quick-cate
 import { FooterMainComponent } from './components/footer-main/footer-main.component';
 import { ProductGridViewComponent } from './components/product-grid-view/product-grid-view.component';
 import { FilterPanelComponent } from './components/filter-panel/filter-panel.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PaginationComponentComponent } from './components/pagination-component/pagination-component.component';
 import { FullPaginationComponentComponent } from './components/full-pagination-component/full-pagination-component.component';
 import { ProductListViewComponent } from './components/product-list-view/product-list-view.component';
@@ -28,6 +28,7 @@ import { ProductOpinionsComponent } from './components/product/product-opinions/
 import { ProductOpinionPopUpComponent } from './components/product/product-opinion-pop-up/product-opinion-pop-up.component';
 import { TechnicalSpecificationPopUpComponent } from './components/product/technical-specification-pop-up/technical-specification-pop-up.component';
 import { ProadctShipInfoComponent } from './components/product/proadct-ship-info/proadct-ship-info.component';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -56,8 +57,9 @@ import { ProadctShipInfoComponent } from './components/product/proadct-ship-info
     ProductOpinionPopUpComponent,
     TechnicalSpecificationPopUpComponent,
     ProadctShipInfoComponent,
+    LoginPageComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
