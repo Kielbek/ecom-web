@@ -18,17 +18,17 @@ import { StarRatingComponent } from './components/star-rating/star-rating.compon
 import { ProductsPageComponent } from './pages/products-page/products-page.component';
 import { ControlBarComponent } from './components/control-bar/control-bar.component';
 import { ProductDetailsPageComponent } from './pages/product-details-page/product-details-page.component';
-import { ProductInfoComponent } from './components/product/product-info/product-info.component';
-import { ProductImagesComponent } from './components/product/product-images/product-images.component';
 import { ProductDetailsComponent } from './components/product/product-details/product-details.component';
 import { TechnicalSpecificationComponent } from './components/product/technical-specification/technical-specification.component';
 import { ProductDescriptionComponent } from './components/product/product-description/product-description.component';
-import { SellerInfoComponent } from './components/product/seller-info/seller-info.component';
-import { ProductOpinionsComponent } from './components/product/product-opinions/product-opinions.component';
-import { ProductOpinionPopUpComponent } from './components/product/product-opinion-pop-up/product-opinion-pop-up.component';
+
 import { TechnicalSpecificationPopUpComponent } from './components/product/technical-specification-pop-up/technical-specification-pop-up.component';
 import { ProadctShipInfoComponent } from './components/product/proadct-ship-info/proadct-ship-info.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { RegisterPageComponent } from './pages/register-page/register-page.component';
+import { ProductOpinionsComponent } from './components/product/product-opinions/product-opinions.component';
+import { SellerInfoComponent } from './components/product/seller-info/seller-info.component';
+import { ProductOpinionPopUpComponent } from './components/product/product-opinion-pop-up/product-opinion-pop-up.component';
 
 @NgModule({
   declarations: [
@@ -47,8 +47,6 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
     ProductListViewComponent,
     StarRatingComponent,
     ProductDetailsPageComponent,
-    ProductInfoComponent,
-    ProductImagesComponent,
     ProductDetailsComponent,
     TechnicalSpecificationComponent,
     ProductDescriptionComponent,
@@ -58,6 +56,7 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
     TechnicalSpecificationPopUpComponent,
     ProadctShipInfoComponent,
     LoginPageComponent,
+    RegisterPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
